@@ -47,20 +47,33 @@
         <section>
             <h2>Contato e Orçamento</h2>
             <form method="get" action="">
-                <label>Nome</label><br>
-                <input type="text" name="nome"><br><br>
-                <label>Data de Ida</label><br>
-                <input type="date" name="DataIda"><br><br>
 
-                <label>Data de volta</label><br>
-                <input type="date" name='DataVolta'><br><br>
+                <fieldset>
+                    <legend>Dados para a sua viagem</legend>
+                    <label>Nome</label><br>
+                    <input type="text" name="nome"><br><br>
+                    <label>Data de Ida</label><br>
+                    <input type="date" name="DataIda"><br><br>
 
-                <label>Email</label><br>
-                <input type="text" required name="email"><br><br>
+                    <label>Data de volta</label><br>
+                    <input type="date" name='DataVolta'><br><br>
 
-                <label>Quantidade de Pessoas</label><br>
-                <input type="number" name="qtdPessoas"><br><br>
+                    <label>Email</label><br>
+                    <input type="text" required name="email"><br><br>
 
+                    <label>Quantidade de Pessoas</label><br>
+                    <input type="number" name="qtdPessoas"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Quais serviços deseja contratar?</legend>
+                    <label>
+                        <br><input type="checkbox" name="passageiros" value="Passagens"> Compra de passagens 
+                    </label>
+                    <label>
+                        <br><input type="checkbox" name="hospedagem" value="Hospedagem"> Reserva de Hospedagem <br><br>
+                    </label>
+                </fieldset>
+                
                 <label>Comentário</label><br>
                 <textarea rows="5" name="Comentário"></textarea><br>
                 <button>Salvar</button>
@@ -70,7 +83,7 @@
         <br><br>
     </figure>
     <section>
-        <h2>Tavxas e Serviços</h2>
+        <h2>Taxas e Serviços</h2>
         <p>Conheça nossas ofertas!</p>
         <table border>
             <caption>Descrição de Serviços e Respectivos Valores</caption>
