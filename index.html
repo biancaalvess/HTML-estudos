@@ -45,11 +45,10 @@
             Seu navegador não suporta o formato do vídeo! <a href="https://www.pexels.com/pt-br/procurar/videos/canc%C3%BAn/"> Clique aui para visualizar ou baixar.</a>
         </video>
         <section>
-            <h2>Contato e Orçamento</h2>
-            <form method="get" action="">
-
-                <fieldset>
-                    <legend>Dados para a sua viagem</legend>
+            
+            <fieldset>
+                <h2>Contato e Orçamento</h2>
+                <form method="get" action="">
                     <label>Nome</label><br>
                     <input type="text" name="nome"><br><br>
                     <label>Data de Ida</label><br>
@@ -63,17 +62,42 @@
 
                     <label>Quantidade de Pessoas</label><br>
                     <input type="number" name="qtdPessoas"><br><br>
-                </fieldset>
+            </fieldset>
                 <fieldset>
-                    <legend>Quais serviços deseja contratar?</legend>
+                    <legend>Quais serviços deseja contratar</legend>
                     <label>
-                        <br><input type="checkbox" name="passageiros" value="Passagens"> Compra de passagens 
+                        <br><input type="checkbox" name="passagens" value="Passagens"> Compra de passagens
                     </label>
                     <label>
-                        <br><input type="checkbox" name="hospedagem" value="Hospedagem"> Reserva de Hospedagem <br><br>
+                        <br><input type="checkbox" name="hospedagem" value="Hospedagem"> Reserva de hospedagem
                     </label>
                 </fieldset>
-                
+
+                <fieldset>
+                    <legend>Escolha a forma de pagamento</legend>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Cartão de Crédito"> Cartão de Crédito
+                    </label> 
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Cartão de Débito"> Cartão de Débito
+                    </label> 
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Boleto"> Boleto
+                    </label> 
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Pix"> Pix
+                    </label> 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escolha o prazo para pagamento</legend>
+                    <select name="prazoPagamento">
+                        <option value="A vista">A vista</option>
+                        <option value="5x">5x Sem juros</option>
+                        <option value="10x">10x Com juos</option>
+                    </select>
+                </fieldset>
+
                 <label>Comentário</label><br>
                 <textarea rows="5" name="Comentário"></textarea><br>
                 <button>Salvar</button>
@@ -83,7 +107,7 @@
         <br><br>
     </figure>
     <section>
-        <h2>Taxas e Serviços</h2>
+        <h2>Tavxas e Serviços</h2>
         <p>Conheça nossas ofertas!</p>
         <table border>
             <caption>Descrição de Serviços e Respectivos Valores</caption>
