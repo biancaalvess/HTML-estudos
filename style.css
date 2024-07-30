@@ -3,12 +3,24 @@ body{
     font-family: Lato, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 2.2em;
-    color: #767736
+    color: #767736;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(121, 202, 171);
+}
+
+section, footer{
+    margin: 40px;
 }
 
 h1{
     font-weight: 63px;
     color: #13462c;
+    padding: 15px;
+    color: white;
+    text-align: center;
 }
 
 h2{
@@ -16,4 +28,27 @@ h2{
     text-transform: uppercase;
     color: #000000;
     font-weight: 600;
+}
+
+nav li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav li{
+    float: left;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+}
+
+nav{
+    font-size: 12px;
+    letter-spacing: 4px;
+    height: 50px;
+    background-color: rgb(144, 216, 188);
+    padding-right: 40px;
 }
