@@ -73,3 +73,11 @@ table tr:nth-child(odd){
 table thead th{
     background-color: rgb(144, 216, 188);
 }
+
+#saiba .figuras figure{
+    display: inline-block;
+}
+
+#saiba .figuras{
+    text-align: center;
+}
