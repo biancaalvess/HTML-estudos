@@ -3,23 +3,14 @@ body{
     font-family: Lato, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 2.2em;
-    color: #767736;
-    margin: 0;
-}
-
-header{
-    background-color: rgb(121, 202, 171);
-}
-
-section, footer{
-    margin: 40px;
+    color: #303030;
 }
 
 h1{
-    font-weight: 63px;
-    color: #13462c;
+    font-weight: 100px;
+    color: #85b69c;
     padding: 15px;
-    color: white;
+    color: rgb(16, 99, 20);
     text-align: center;
 }
 
@@ -28,8 +19,41 @@ h2{
     text-transform: uppercase;
     color: #000000;
     font-weight: 600;
+    text-align: center;
 }
 
+header{
+    background-color: #61a07e;
+    padding: 50px;
+}
+
+section, footer{
+    margin: 40px;
+}
+
+
+nav li a{
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav li{
+    float: left;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+}
+
+nav{
+    font-size: 12px;
+    letter-spacing: 4px;
+    height: 50px;
+    background-color: #378d70;
+    padding-right: 40px;
+}
 
 table{
     width: 100%;
@@ -37,7 +61,7 @@ table{
 
 table td{
     color: #303030;
-    padding: 5x;
+    padding: 5px;
 }
 
 table tr:nth-child(even){
@@ -45,9 +69,10 @@ table tr:nth-child(even){
 }
 
 table tr:nth-child(odd){
-    background-color: #bdbdbd;
+    background-color: #dbdbdbdb;
 }
 
 table thead th{
-    background-color: rgb(144, 216, 188);
+    background-color: #378d70;
+    color:aliceblue
 }
