@@ -4,151 +4,148 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo Arco</title>
-    <link href="link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="bg-warning text-center p-3">
         <nav>
-            <ul>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Contato</a</li>
-                <li><a href="#">Trabalhe Conosco</a</li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Trabalhe Conosco</a></li>
             </ul>
         </nav>
         <h1>Grupo Arco</h1>
     </header>
-    <section>
-            <hr>
-            <h2>Saiba mais sobre o nossa história </h2>
-            Há 20 anos, começamos nossa jornada com uma loja simples, mas com um grande sonho: oferecer qualidade, conforto e inovação em móveis, eletrodomésticos e estofados. Hoje, nossa trajetória é marcada pela dedicação em transformar espaços e vidas com soluções que combinam estilo e funcionalidade.
-            Explore nossa ampla seleção de produtos e descubra porque o Grupo Arco é sinônimo de confiança e excelência. Sua casa merece o melhor, e nós estamos aqui para tornar isso realidade. Agradecemos por fazer parte da nossa história!
-            <br><br>
-            <hr>
-        </p>
-        <a href="file:///C:/Users/bianc/Documents/Rep/HTML-estudos/Atividades%20HTML/Atividades%20HTML/index.html">Fotos da sua próxima compra! </a>
-        <div>        
-            <figure>
-                <img src="img/estofado.jpg" alt="Estofado Mari">
+
+    <section class="container text-center mt-5">
+        <hr>
+        <h2>Saiba mais sobre a nossa história</h2>
+        <p>Há 20 anos, começamos nossa jornada com uma loja simples, mas com um grande sonho: oferecer qualidade, conforto e inovação em móveis, eletrodomésticos e estofados. Hoje, nossa trajetória é marcada pela dedicação em transformar espaços e vidas com soluções que combinam estilo e funcionalidade.</p>
+        <p>Explore nossa ampla seleção de produtos e descubra porque o Grupo Arco é sinônimo de confiança e excelência. Sua casa merece o melhor, e nós estamos aqui para tornar isso realidade. Agradecemos por fazer parte da nossa história!</p>
+        <hr>
+        <a href="file:///C:/Users/bianc/Documents/Rep/HTML-estudos/Atividades%20HTML/Atividades%20HTML/index.html" class="btn btn-primary">Fotos da sua próxima compra!</a>
+        <div id="pct" class="d-flex justify-content-center mt-4">
+            <figure class="m-3">
+                <img src="img/estofado.jpg" alt="Estofado Mari" class="img-fluid">
                 <figcaption>Estofado Mari</figcaption>
-            </figue>
-            <figure>
-                <img src="img/cozinha.jpeg" alt="Cozinha Malu">
+            </figure>
+            <figure class="m-3">
+                <img src="img/cozinha.jpeg" alt="Cozinha Malu" class="img-fluid">
                 <figcaption>Cozinha Malu</figcaption>
             </figure>
-            <figure>
-                <img src="img/eletro.jpg" alt="Diversidade em Eletros">
+            <figure class="m-3">
+                <img src="img/eletro.jpg" alt="Diversidade em Eletros" class="img-fluid">
                 <figcaption>Diversidade em Eletros</figcaption>
             </figure>
         </div>
-        </section>
-            <fieldset class="container-fluid bg-warning text-center">
-                <h2>Agende uma visita com a gente!</h2>
-                <form method="get" action="">
-                    <label>Nome</label><br>
-                    <input type="text" name="nome"><br><br>
-                    <label>Data de Ida</label><br>
-                    <input type="date" name="DataIda"><br><br>
+    </section>
 
-                    <label>Email</label><br>
-                    <input type="text" required name="email"><br><br>
+    <section class="container mt-5">
+        <fieldset class="bg-warning text-center p-4">
+            <h2>Agende uma visita com a gente!</h2>
+            <form method="get" action="">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" name="nome" id="nome" required>
+                </div>
 
-                    <label>Quantidade de Pessoas</label><br>
-                    <input type="number" name="qtdPessoas"><br><br>
-            </fieldset>
-                <fieldset class="container-fluid bg-light text-center">
+                <div class="mb-3">
+                    <label for="dataIda" class="form-label">Data de Ida:</label>
+                    <input type="date" class="form-control" name="dataIda" id="dataIda">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="qtdPessoas" class="form-label">Quantidade de Pessoas:</label>
+                    <input type="number" class="form-control" name="qtdPessoas" id="qtdPessoas">
+                </div>
+
+                <fieldset class="mb-3">
                     <legend>Quais produtos está procurando?</legend>
-                    <label>
-                        <br><input type="checkbox" name="moveis" value="moveis"> Movéis
-                    </label>
-                    <label>
-                        <br><input type="checkbox" name="eletros" value="eletros"> Eletros
-                    </label>
-                    <label>
-                        <br><input type="checkbox" name="estofados" value="estofados"> Estofados
-                    </label>
+                    <div>
+                        <label><input type="checkbox" name="moveis" value="moveis"> Móveis</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="eletros" value="eletros"> Eletros</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="estofados" value="estofados"> Estofados</label>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Escolha a forma de pagamento</legend>
-                    <label>
-                        <br><input type="radio" name="formaPagamento" value="Cartão de Crédito"> Cartão de Crédito
-                    </label> 
-                    <label>
-                        <br><input type="radio" name="formaPagamento" value="Cartão de Débito"> Cartão de Débito
-                    </label> 
-                    <label>
-                        <br><input type="radio" name="formaPagamento" value="Boleto"> Boleto
-                    </label> 
-                    <label>
-                        <br><input type="radio" name="formaPagamento" value="Pix"> Pix
-                    </label> 
+                <fieldset class="mb-3">
+                    <legend>Escolha a forma de pagamento:</legend>
+                    <div>
+                        <label><input type="radio" name="formaPagamento" value="Cartão de Crédito"> Cartão de Crédito</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="formaPagamento" value="Cartão de Débito"> Cartão de Débito</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="formaPagamento" value="Boleto"> Boleto</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="formaPagamento" value="Pix"> Pix</label>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Escolha o prazo para pagamento</legend>
-                    <select name="prazoPagamento">
-                        <option value="A vista">A vista</option>
+                <fieldset class="mb-3">
+                    <legend>Escolha o prazo para pagamento:</legend>
+                    <select name="prazoPagamento" class="form-select">
+                        <option value="A vista">À vista</option>
                         <option value="5x">5x Sem juros</option>
-                        <option value="10x">10x Com juos</option>
+                        <option value="10x">10x Com juros</option>
                     </select>
                 </fieldset>
 
-                <label>Comentário</label><br>
-                <textarea rows="5" name="Comentário"></textarea><br>
-                <button>Salvar</button>
+                <div class="mb-3">
+                    <label for="comentario" class="form-label">Comentário:</label>
+                    <textarea id="comentario" name="comentario" class="form-control" rows="5"></textarea>
+                </div>
 
+                <button type="submit" class="btn btn-primary">Salvar</button>
             </form>
-        </section>
-        <br><br>
-    </figure>
-    <section>
+        </fieldset>
+    </section>
+
+    <section class="container mt-5">
         <h2>Parceiros</h2>
         <p>Conheça nossos parceiros!</p>
-        <table>
+        <table class="table">
             <caption>Temos ótimos parceiros conosco.</caption>
-                <thead>
+            <thead>
                 <tr>
-                    <th>
-                        Parceiro
-                    </th>
-                    <th>
-                        Setor
-                    </th>
+                    <th>Parceiro</th>
+                    <th>Setor</th>
                 </tr>
-                </thead>
-                <body></body>
-            <tr>
-                <td>
-                    Got
-                </td>
-                <td>
-                    Estofados
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Move
-                </td>
-                <td>
-                    Movéis
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Left
-                </td>
-                <td> 
-                    Eletros
-                </td>
-            </tr>
-            </body>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Got</td>
+                    <td>Estofados</td>
+                </tr>
+                <tr>
+                    <td>Move</td>
+                    <td>Móveis</td>
+                </tr>
+                <tr>
+                    <td>Left</td>
+                    <td>Eletros</td>
+                </tr>
+            </tbody>
         </table>
     </section>
-    <footer class="container-fluid bg-warning text-center">
+
+    <footer class="container-fluid bg-warning text-center p-3">
         <p>Desenvolvido por Bianca Alves e Faculdade Descomplica</p>
     </footer>
-<script src="<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
