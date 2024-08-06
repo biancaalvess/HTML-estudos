@@ -26,3 +26,5 @@ Especificamente, o site oferecido no projeto (acessível pelo arquivo [`index.ht
 - **Links e Imagens:** Instruções sobre como incorporar links e imagens em uma página HTML.
 
 Ao explorar este projeto, os usuários poderão aprimorar suas habilidades em HTML e adquirir uma base sólida para avançar em suas jornadas no desenvolvimento web.
+
+Visualização do site: file:///C:/Users/bianc/Documents/Rep/HTML-estudos/Atividades%20HTML/Atividades%20HTML/index.html
