@@ -2,18 +2,24 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
+    background-color: #f5f5f5; /* Adiciona um fundo leve ao corpo */
 }
 
-/* Estilo para imagens */
-#pct figure {
-    display: inline-block;
-    margin: 15px;
+/* Cores do tema */
+.bg-verde-musgo {
+    background-color: #4a5d23; /* Verde musgo */
 }
 
-#pct img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.text-verde-musgo {
+    color: #4a5d23; /* Verde musgo */
+}
+
+.bg-branco-gelo {
+    background-color: #f0f4f4; /* Branco gelo */
+}
+
+.bg-bege {
+    background-color: #f5f5dc; /* Bege */
 }
 
 /* Estilo para o formulário */
@@ -25,4 +31,11 @@ form {
 /* Estilo para a tabela */
 .table {
     margin-top: 20px;
+}
+
+/* Carrossel */
+.carousel-inner img {
+    width: 100%; /* Imagem ocupa a largura total do carrossel */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    object-fit: contain; /* Ajusta as imagens para manter a proporção sem cortar */
 }
